@@ -5,11 +5,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
-using System.Text;
 
 namespace DAL.DbContext
 {
-    public class DataWrapper
+    public class DataWrapper : IDataWrapper
     {
         private readonly IConfiguration _configuration;
         private const string DB_TYPE_SQL_SERVER = "MSSQLServer";

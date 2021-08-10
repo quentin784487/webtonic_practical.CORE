@@ -13,9 +13,9 @@ namespace Web.API.Controllers
     [Route("api/[controller]")]    
     public class StudentsController : ControllerBase
     {
-        private readonly IStudents students;
+        private readonly IStudentsLogic students;
 
-        public StudentsController(IStudents _students)
+        public StudentsController(IStudentsLogic _students)
         {
             students = _students;
         }

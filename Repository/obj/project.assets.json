@@ -152,20 +152,6 @@
           }
         }
       },
-      "BLL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Common.Shared": "1.0.0",
-          "Repository": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BLL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BLL.dll": {}
-        }
-      },
       "Common.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -188,20 +174,6 @@
         },
         "runtime": {
           "bin/placeholder/DAL.dll": {}
-        }
-      },
-      "Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Common.Shared": "1.0.0",
-          "DAL": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Repository.dll": {}
         }
       }
     }
@@ -562,11 +534,6 @@
         "version.txt"
       ]
     },
-    "BLL/1.0.0": {
-      "type": "project",
-      "path": "../BLL/BLL.csproj",
-      "msbuildProject": "../BLL/BLL.csproj"
-    },
     "Common.Shared/1.0.0": {
       "type": "project",
       "path": "../Common.Shared/Common.Shared.csproj",
@@ -576,16 +543,12 @@
       "type": "project",
       "path": "../DAL/DAL.csproj",
       "msbuildProject": "../DAL/DAL.csproj"
-    },
-    "Repository/1.0.0": {
-      "type": "project",
-      "path": "../Repository/Repository.csproj",
-      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BLL >= 1.0.0"
+      "Common.Shared >= 1.0.0",
+      "DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -594,11 +557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_systems\\webtonic_practical.CORE\\Web.API\\Web.API.csproj",
-      "projectName": "Web.API",
-      "projectPath": "C:\\_systems\\webtonic_practical.CORE\\Web.API\\Web.API.csproj",
+      "projectUniqueName": "C:\\_systems\\webtonic_practical.CORE\\Repository\\Repository.csproj",
+      "projectName": "Repository",
+      "projectPath": "C:\\_systems\\webtonic_practical.CORE\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\_systems\\webtonic_practical.CORE\\Web.API\\obj\\",
+      "outputPath": "C:\\_systems\\webtonic_practical.CORE\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -615,8 +578,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\_systems\\webtonic_practical.CORE\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\_systems\\webtonic_practical.CORE\\BLL\\BLL.csproj"
+            "C:\\_systems\\webtonic_practical.CORE\\Common.Shared\\Common.Shared.csproj": {
+              "projectPath": "C:\\_systems\\webtonic_practical.CORE\\Common.Shared\\Common.Shared.csproj"
+            },
+            "C:\\_systems\\webtonic_practical.CORE\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\_systems\\webtonic_practical.CORE\\DAL\\DAL.csproj"
             }
           }
         }
@@ -641,9 +607,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
