@@ -1,0 +1,8 @@
+C:\_systems\webtonic_practical.CORE\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\_systems\webtonic_practical.CORE\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\_systems\webtonic_practical.CORE\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\_systems\webtonic_practical.CORE\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\_systems\webtonic_practical.CORE\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\_systems\webtonic_practical.CORE\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\_systems\webtonic_practical.CORE\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\_systems\webtonic_practical.CORE\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
