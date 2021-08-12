@@ -7,5 +7,7 @@ namespace BLL.Contracts
     {
         long SetStudents(StudentsDTO model);
         List<StudentsDTO> GetStudents(StudentsDTO model);
+        void UpdateStudents(StudentsDTO model);
+        void DeleteStudents(StudentsDTO model);
     }
 }

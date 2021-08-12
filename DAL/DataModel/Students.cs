@@ -8,8 +8,9 @@ namespace DAL.DataModel
         public int StudentNumber { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
-        public int Course { get; set; }
+        public int CourseId { get; set; }
         public string CourseDescription { get; set; }
+        public string CourseCode { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? ModifiedDate { get; set; }
 
@@ -19,8 +20,9 @@ namespace DAL.DataModel
             StudentNumber = GetInt(reader, "StudentNumber", -1);
             FirstName = GetString(reader, "FirstName", null);
             Surname = GetString(reader, "Surname", null);
-            Course = GetInt(reader, "Course", -1);
+            CourseId = GetInt(reader, "Course", -1);
             CourseDescription = GetString(reader, "CourseDescription", null);
+            CourseCode = GetString(reader, "CourseCode", null);
             CreatedDate = GetDateTime(reader, "CreatedDate");
             ModifiedDate = GetDateTime(reader, "ModifiedDate");
         }
