@@ -1,0 +1,9 @@
+C:\_systems\webtonic_practical.CORE\Common.Shared\bin\Debug\netcoreapp3.1\Common.Shared.deps.json
+C:\_systems\webtonic_practical.CORE\Common.Shared\bin\Debug\netcoreapp3.1\Common.Shared.dll
+C:\_systems\webtonic_practical.CORE\Common.Shared\bin\Debug\netcoreapp3.1\Common.Shared.pdb
+C:\_systems\webtonic_practical.CORE\Common.Shared\obj\Debug\netcoreapp3.1\Common.Shared.csproj.AssemblyReference.cache
+C:\_systems\webtonic_practical.CORE\Common.Shared\obj\Debug\netcoreapp3.1\Common.Shared.AssemblyInfoInputs.cache
+C:\_systems\webtonic_practical.CORE\Common.Shared\obj\Debug\netcoreapp3.1\Common.Shared.AssemblyInfo.cs
+C:\_systems\webtonic_practical.CORE\Common.Shared\obj\Debug\netcoreapp3.1\Common.Shared.csproj.CoreCompileInputs.cache
+C:\_systems\webtonic_practical.CORE\Common.Shared\obj\Debug\netcoreapp3.1\Common.Shared.dll
+C:\_systems\webtonic_practical.CORE\Common.Shared\obj\Debug\netcoreapp3.1\Common.Shared.pdb

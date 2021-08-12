@@ -28,13 +28,15 @@ namespace BLL
             return _studentsRepository.SetStudents(parameters);
         }
 
-        public PagedStudentsDTO GetStudents(StudentsDTO model)
+        public PagedStudentsDTO GetStudents(StudentsDTO model, int pageIndex, int pageSize)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("StudentNumber", model.StudentNumber);
             parameters.Add("FirstName", model.FirstName);
             parameters.Add("Surname", model.Surname);
             parameters.Add("CourseId", model.CourseId);
+            parameters.Add("pageIndex", pageIndex);
+            parameters.Add("pageSize", pageSize);
 
             PageResult studentsResult = _studentsRepository.GetStudents(parameters).listItems;
             PagedStudentsDTO pagedModel = new PagedStudentsDTO(studentsResult.totalCount);

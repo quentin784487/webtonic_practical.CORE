@@ -1,0 +1,16 @@
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\Common.Shared.dll
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\Repository.dll
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\Common.Shared.pdb
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\Repository.pdb
+C:\_systems\webtonic_practical.CORE\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+C:\_systems\webtonic_practical.CORE\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
