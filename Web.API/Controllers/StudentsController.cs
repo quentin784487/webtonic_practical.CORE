@@ -1,6 +1,8 @@
 ﻿using BLL.Contracts;
 using Common.Shared.DTO;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+
 namespace Web.API.Controllers
 {
     [ApiController]
@@ -16,9 +18,9 @@ namespace Web.API.Controllers
 
         [HttpPost("[action]")]
         [Route("Students/ImportStudents")]
-        public void ImportStudents(StudentsDTO model)
+        public void ImportStudents(List<StudentsDTO> model)
         {
-            _students.SetStudents(model);
+            _students.ImportStudents(model);
         }
 
         [HttpPost("[action]")]

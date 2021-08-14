@@ -9,7 +9,7 @@ namespace DAL.DataModel
 
         public override void Populate(DbDataReader reader)
         {
-            Id = GetLong(reader, "Id", -1);
+            Id = GetInt(reader, "Id", -1);
             Description = GetString(reader, "Description", null);
             CourseCode = GetString(reader, "CourseCode", null);
         }

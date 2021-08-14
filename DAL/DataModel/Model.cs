@@ -9,7 +9,6 @@ namespace DAL.DataModel
     public abstract class Model
     {
         public long Id { get; set; }
-
         public abstract void Populate(DbDataReader reader);
 
         protected bool HasColumn(IDataRecord dr, string columnName)

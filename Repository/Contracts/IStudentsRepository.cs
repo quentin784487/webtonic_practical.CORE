@@ -5,7 +5,8 @@ namespace Repository.Contracts
 {
     public interface IStudentsRepository
     {
-        long SetStudents(Dictionary<string, object> model);
+        long SetStudent(Dictionary<string, object> model);
+        PageResult GetStudent(Dictionary<string, object> model);
         PageResult GetStudents(Dictionary<string, object> model);
         void UpdateStudents(Dictionary<string, object> model);
         void DeleteStudents(Dictionary<string, object> model);

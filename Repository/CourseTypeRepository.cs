@@ -1,5 +1,4 @@
-﻿using Common.Shared.DTO;
-using DAL.DataModel;
+﻿using DAL.DataModel;
 using DAL.DbContext;
 using Repository.Contracts;
 using System.Collections.Generic;
@@ -20,9 +19,14 @@ namespace Repository
             return (long)_dataWrapper.ExecuteNonQuery("sp_setCourseType", model);
         }
 
-        public List<CourseTypeDTO> GetCourseTypes(Dictionary<string, object> model)
+        public PageResult GetCourseTypes()
         {
-            return _dataWrapper.ExecuteDataReader<CourseType>("sp_getCourseTypes", model, typeof(CourseType)).listItems;
+            return _dataWrapper.ExecuteDataReader<CourseType>("sp_getAllCourseTypes", null, typeof(CourseType));
+        }
+
+        public PageResult GetCourseTypes(Dictionary<string, object> model)
+        {
+            return _dataWrapper.ExecuteDataReader<CourseType>("sp_getCourseTypes", model, typeof(CourseType));
         }
     }
 }

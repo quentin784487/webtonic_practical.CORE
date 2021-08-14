@@ -5,8 +5,9 @@ namespace BLL.Contracts
 {
     public interface IStudentsLogic
     {
-        long SetStudents(StudentsDTO model);
+        int[] ImportStudents(List<StudentsDTO> model);
         PagedStudentsDTO GetStudents(StudentsDTO model, int pageIndex, int pageSize);
+        StudentsDTO GetStudent(StudentsDTO model);
         void UpdateStudents(StudentsDTO model);
         void DeleteStudents(StudentsDTO model);
     }

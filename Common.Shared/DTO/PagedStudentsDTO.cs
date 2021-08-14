@@ -6,6 +6,12 @@ namespace Common.Shared.DTO
     {
         public int totalCount { get; set; }
         public List<StudentsDTO> students { get; set; }
+
+        public PagedStudentsDTO()
+        {
+            students = new List<StudentsDTO>();
+        }
+
         public PagedStudentsDTO(int totalCount)
         {
             this.totalCount = totalCount;

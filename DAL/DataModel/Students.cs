@@ -11,6 +11,7 @@ namespace DAL.DataModel
         public int CourseId { get; set; }
         public string CourseDescription { get; set; }
         public string CourseCode { get; set; }
+        public string Grade { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? ModifiedDate { get; set; }
 
@@ -23,6 +24,7 @@ namespace DAL.DataModel
             CourseId = GetInt(reader, "Course", -1);
             CourseDescription = GetString(reader, "CourseDescription", null);
             CourseCode = GetString(reader, "CourseCode", null);
+            Grade = GetString(reader, "Grade", null);
             CreatedDate = GetDateTime(reader, "CreatedDate");
             ModifiedDate = GetDateTime(reader, "ModifiedDate");
         }

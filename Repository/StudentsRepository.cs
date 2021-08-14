@@ -14,9 +14,14 @@ namespace Repository
             _dataWrapper = dataWrapper;
         }
 
-        public long SetStudents(Dictionary<string, object> model)
+        public long SetStudent(Dictionary<string, object> model)
         {
-            return (long)_dataWrapper.ExecuteNonQuery("sp_setStudents", model);
+            return (long)_dataWrapper.ExecuteNonQuery("sp_setStudent", model);
+        }
+
+        public PageResult GetStudent(Dictionary<string, object> model)
+        {
+            return _dataWrapper.ExecuteDataReader<Students>("sp_getStudent", model, typeof(Students));
         }
 
         public PageResult GetStudents(Dictionary<string, object> model)
