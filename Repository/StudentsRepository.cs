@@ -29,14 +29,14 @@ namespace Repository
             return _dataWrapper.ExecuteDataReader<Students>("sp_getStudents", model, typeof(Students));
         }
 
-        public void UpdateStudents(Dictionary<string, object> model)
+        public void UpdateStudent(Dictionary<string, object> model)
         {
-            _dataWrapper.ExecuteNonQuery("sp_updateStudents", model);
+            _dataWrapper.ExecuteNonQuery("sp_putStudent", model);
         }
 
-        public void DeleteStudents(Dictionary<string, object> model)
+        public void DeleteStudent(Dictionary<string, object> model)
         {
-            _dataWrapper.ExecuteNonQuery("sp_deleteStudents", model);
+            _dataWrapper.ExecuteNonQuery("sp_deleteStudent", model);
         }
     }
 }

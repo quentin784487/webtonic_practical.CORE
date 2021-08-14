@@ -8,7 +8,7 @@ namespace Repository.Contracts
         long SetStudent(Dictionary<string, object> model);
         PageResult GetStudent(Dictionary<string, object> model);
         PageResult GetStudents(Dictionary<string, object> model);
-        void UpdateStudents(Dictionary<string, object> model);
-        void DeleteStudents(Dictionary<string, object> model);
+        void UpdateStudent(Dictionary<string, object> model);
+        void DeleteStudent(Dictionary<string, object> model);
     }
 }

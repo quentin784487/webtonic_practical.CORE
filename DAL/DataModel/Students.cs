@@ -21,7 +21,7 @@ namespace DAL.DataModel
             StudentNumber = GetInt(reader, "StudentNumber", -1);
             FirstName = GetString(reader, "FirstName", null);
             Surname = GetString(reader, "Surname", null);
-            CourseId = GetInt(reader, "Course", -1);
+            CourseId = GetInt(reader, "CourseId", -1);
             CourseDescription = GetString(reader, "CourseDescription", null);
             CourseCode = GetString(reader, "CourseCode", null);
             Grade = GetString(reader, "Grade", null);

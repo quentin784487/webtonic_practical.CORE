@@ -34,14 +34,14 @@ namespace Web.API.Controllers
         [Route("Students/UpdateStudent")]
         public void UpdateStudent(StudentsDTO model)
         {
-            _students.UpdateStudents(model);
+            _students.UpdateStudent(model);
         }
 
         [HttpPost("[action]")]
         [Route("Students/DeleteStudent")]
         public void DeleteStudent(StudentsDTO model)
         {
-            _students.DeleteStudents(model);
+            _students.DeleteStudent(model);
         }
     }
 }

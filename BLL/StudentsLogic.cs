@@ -78,7 +78,9 @@ namespace BLL
                     Surname = student.Surname,
                     StudentNumber = student.StudentNumber,
                     CourseCode = student.CourseCode,
-                    CourseDescription = student.CourseDescription
+                    CourseDescription = student.CourseDescription,
+                    Grade = student.Grade,
+                    CourseId = student.CourseId
                 });
             }
             return pagedModel;
@@ -116,21 +118,24 @@ namespace BLL
             }
         }
 
-        public void UpdateStudents(StudentsDTO model)
+        public void UpdateStudent(StudentsDTO model)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters.Add("Id", model.Id);
             parameters.Add("StudentNumber", model.StudentNumber);
             parameters.Add("FirstName", model.FirstName);
             parameters.Add("Surname", model.Surname);
             parameters.Add("CourseId", model.CourseId);
-            _studentsRepository.UpdateStudents(parameters);
+            parameters.Add("ModifiedDate", DateTime.Now);
+            parameters.Add("Grade", model.Grade);
+            _studentsRepository.UpdateStudent(parameters);
         }
 
-        public void DeleteStudents(StudentsDTO model)
+        public void DeleteStudent(StudentsDTO model)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("Id", model.Id);
-            _studentsRepository.DeleteStudents(parameters);
+            _studentsRepository.DeleteStudent(parameters);
         }
     }
 }

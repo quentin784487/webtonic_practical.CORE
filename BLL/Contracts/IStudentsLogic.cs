@@ -8,7 +8,7 @@ namespace BLL.Contracts
         int[] ImportStudents(List<StudentsDTO> model);
         PagedStudentsDTO GetStudents(StudentsDTO model, int pageIndex, int pageSize);
         StudentsDTO GetStudent(StudentsDTO model);
-        void UpdateStudents(StudentsDTO model);
-        void DeleteStudents(StudentsDTO model);
+        void UpdateStudent(StudentsDTO model);
+        void DeleteStudent(StudentsDTO model);
     }
 }
